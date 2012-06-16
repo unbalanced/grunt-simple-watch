@@ -20,9 +20,9 @@ This might be more CPU intensive, and might not work in high loads with many wat
 But im not sure if the original watch task would do the job as well on this case. i just did not check.
 
 <h1>How to use?</h1>
-simple place the task in your grunt/tasks directory
-use the command: grunt simple_watch (instead of: grunt watch)
+simple place the task in your grunt/tasks directory <br>
+use the command: <b>grunt simple_watch<b> (instead of: grunt watch)
 
-NO NEED TO CHANGE grunt.js configurations!
+NO NEED TO CHANGE grunt.js configurations (your gruntfile)! <br>
 as it keeps on using the "watch" config.
 
