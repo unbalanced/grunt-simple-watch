@@ -2,6 +2,12 @@
  * grunt
  * https://github.com/cowboy/grunt
  *
+ *
+ * Copyright (c) 2012 "Cowboy" Ben Alman
+ * Licensed under the MIT license.
+ * http://benalman.com/about/license/
+ *
+ * Simple Watch task
  * Copyright (c) 2012 Amir Souchami
  * This file is based on the grunt/tasks/watch.js written by "Cowboy" Ben Alman
  * changes where made to get rid of the problematic use of fs.watch because sadly it did not respond on my server setup

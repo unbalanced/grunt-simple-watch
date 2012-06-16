@@ -1,0 +1,44 @@
+{
+  "name": "grunt-simple-watch",
+  "title": "simple watch will watch your files without using fs.watch or fs.watchFile",
+  "description": "no need to change your gruntfile configurations",
+  "version": "0.1.0",
+  "homepage": "https://github.com/unbalanced/grunt-simple-watch",
+  "author": {
+    "name": "Amir Souchami",
+    "email": "amir.souchami@gmail.com",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unbalanced/grunt-simple-watch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unbalanced/grunt-simple-watch/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/unbalanced/grunt-simple-watch/blob/master/LICENSE-MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/unbalanced/grunt-simple-watch/blob/master/LICENSE-GPL"
+    }
+  ],
+  "main": "grunt.js",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt": "~0.3.8",
+    "temporary": "~0.0.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.8"
+  },
+  "keywords": ["grunt.js", "gruntplugin", "grunttask",""]
+}
