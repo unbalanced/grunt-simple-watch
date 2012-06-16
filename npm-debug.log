@@ -1,0 +1,1926 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'instal', '.' ]
+info using npm@1.1.24
+info using node@v0.6.19
+verbose /usr/bin/node node symlink
+verbose config file /home/supersonicads/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/lib/nodejs/npm/npmrc
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/package.json
+verbose loadDefaults grunt-simple-watch@0.1.0
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch',
+verbose where, deps   [ 'grunt' ] ]
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/package.json
+info preinstall grunt-simple-watch@0.1.0
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/temporary/package.json
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/temporary/package.json
+verbose cache add [ 'grunt@~0.3.8', null ]
+silly cache add: name, spec, args [ undefined, 'grunt@~0.3.8', [ 'grunt@~0.3.8', null ] ]
+verbose parsed url { pathname: 'grunt@~0.3.8',
+verbose parsed url   path: 'grunt@~0.3.8',
+verbose parsed url   href: 'grunt@~0.3.8' }
+silly cache add: name, spec, args [ 'grunt', '~0.3.8', [ 'grunt', '~0.3.8' ] ]
+verbose parsed url { pathname: '~0.3.8', path: '~0.3.8', href: '~0.3.8' }
+verbose addNamed [ 'grunt', '~0.3.8' ]
+verbose addNamed [ null, '>=0.3.8- <0.4.0-' ]
+silly name, range, hasData [ 'grunt', '>=0.3.8- <0.4.0-', false ]
+verbose raw, before any munging grunt
+verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+verbose url resolved https://registry.npmjs.org/grunt
+verbose etag "9G44MZO7PVR2KQU02580JW0R5"
+http GET https://registry.npmjs.org/grunt
+http 304 https://registry.npmjs.org/grunt
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"9G44MZO7PVR2KQU02580JW0R5"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:47 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag grunt from cache
+silly name, range, hasData 2 [ 'grunt', '>=0.3.8- <0.4.0-', true ]
+silly versions [ 'grunt',
+silly versions   [ '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.2.5',
+silly versions     '0.2.6',
+silly versions     '0.2.7',
+silly versions     '0.2.8',
+silly versions     '0.2.9',
+silly versions     '0.2.10',
+silly versions     '0.2.11',
+silly versions     '0.2.12',
+silly versions     '0.2.13',
+silly versions     '0.2.14',
+silly versions     '0.2.15',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.3.4',
+silly versions     '0.3.5',
+silly versions     '0.3.6',
+silly versions     '0.3.7',
+silly versions     '0.3.8',
+silly versions     '0.3.9' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '365566acab09beac3075c24b0792106eca832264',
+verbose bin dist     tarball: 'http://registry.npmjs.org/grunt/-/grunt-0.3.9.tgz' } ]
+verbose caching /home/supersonicads/.npm/grunt/0.3.9/package/package.json
+verbose loadDefaults grunt@0.3.9
+silly resolved [ { name: 'grunt',
+silly resolved     description: 'A task-based command line build tool for JavaScript projects.',
+silly resolved     version: '0.3.9',
+silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+silly resolved     homepage: 'http://github.com/cowboy/grunt',
+silly resolved     repository: { type: 'git', url: 'git://github.com/cowboy/grunt.git' },
+silly resolved     bugs: { url: 'http://github.com/cowboy/grunt/issues' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/cowboy/grunt/blob/master/LICENSE-MIT' } ],
+silly resolved     main: 'lib/grunt',
+silly resolved     bin: { grunt: 'bin/grunt' },
+silly resolved     scripts: { test: 'grunt test' },
+silly resolved     engines: { node: '>= 0.6.0' },
+silly resolved     preferGlobal: true,
+silly resolved     keywords: 
+silly resolved      [ 'async',
+silly resolved        'cli',
+silly resolved        'minify',
+silly resolved        'uglify',
+silly resolved        'build',
+silly resolved        'underscore',
+silly resolved        'unit',
+silly resolved        'test',
+silly resolved        'qunit',
+silly resolved        'nodeunit',
+silly resolved        'server',
+silly resolved        'init',
+silly resolved        'scaffold',
+silly resolved        'make',
+silly resolved        'jake',
+silly resolved        'tool' ],
+silly resolved     dependencies: 
+silly resolved      { async: '~0.1.18',
+silly resolved        colors: '~0.6.0',
+silly resolved        connect: '~1.8.6',
+silly resolved        dateformat: '1.0.2-1.2.3',
+silly resolved        'glob-whatev': '~0.1.4',
+silly resolved        hooker: '~0.2.3',
+silly resolved        jshint: '~0.5.9',
+silly resolved        nodeunit: '~0.6.4',
+silly resolved        nopt: '~1.0.10',
+silly resolved        prompt: '~0.1.12',
+silly resolved        semver: '~1.0.13',
+silly resolved        'uglify-js': '~1.0.7',
+silly resolved        underscore: '~1.2.4',
+silly resolved        'underscore.string': '~2.1.1',
+silly resolved        temporary: '~0.0.2',
+silly resolved        'gzip-js': '~0.3.1' },
+silly resolved     devDependencies: {},
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'grunt@0.3.9',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'grunt@~0.3.8' } ]
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch grunt@0.3.9
+info installOne grunt@0.3.9
+verbose from cache /home/supersonicads/.npm/grunt/0.3.9/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt
+verbose unpack /home/supersonicads/.npm/grunt/0.3.9/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry grunt.js
+silly extracting entry LICENSE-MIT
+silly extracting entry tasks/init.js
+silly extracting entry tasks/test.js
+silly extracting entry tasks/concat.js
+silly extracting entry tasks/lint.js
+silly extracting entry tasks/server.js
+silly extracting entry tasks/misc.js
+silly extracting entry tasks/qunit.js
+silly extracting entry tasks/min.js
+silly extracting entry tasks/watch.js
+silly extracting entry tasks/qunit/phantom.js
+silly extracting entry tasks/qunit/qunit.js
+silly extracting entry tasks/qunit/phantom.json
+silly extracting entry tasks/init/gruntplugin.js
+silly extracting entry tasks/init/node.js
+silly extracting entry tasks/init/commonjs.js
+silly extracting entry tasks/init/jquery.js
+silly extracting entry tasks/init/gruntfile.js
+silly extracting entry tasks/init/licenses/LICENSE-MIT
+silly extracting entry tasks/init/licenses/LICENSE-GPL
+silly extracting entry tasks/init/commonjs/root/.npmignore
+silly extracting entry tasks/init/commonjs/root/README.md
+silly extracting entry tasks/init/commonjs/root/grunt.js
+silly extracting entry tasks/init/commonjs/root/lib/name.js
+silly extracting entry tasks/init/commonjs/root/test/name_test.js
+silly extracting entry tasks/init/commonjs/rename.json
+silly extracting entry tasks/init/gruntplugin/root/.npmignore
+silly extracting entry tasks/init/gruntplugin/root/README.md
+silly extracting entry tasks/init/gruntplugin/root/grunt.js
+silly extracting entry tasks/init/gruntplugin/root/bin/name
+silly extracting entry tasks/init/gruntplugin/root/tasks/name.js
+silly extracting entry tasks/init/gruntplugin/root/test/name_test.js
+silly extracting entry tasks/init/gruntplugin/rename.json
+silly extracting entry tasks/init/jquery/root/README.md
+silly extracting entry tasks/init/jquery/root/grunt.js
+silly extracting entry tasks/init/jquery/root/src/name.js
+silly extracting entry tasks/init/jquery/root/libs/qunit/qunit.js
+silly extracting entry tasks/init/jquery/root/libs/qunit/qunit.css
+silly extracting entry tasks/init/jquery/root/libs/jquery/jquery.js
+silly extracting entry tasks/init/jquery/root/test/name_test.js
+silly extracting entry tasks/init/jquery/root/test/name.html
+silly extracting entry tasks/init/jquery/rename.json
+silly extracting entry tasks/init/misc/placeholder
+silly extracting entry tasks/init/node/root/.npmignore
+silly extracting entry tasks/init/node/root/README.md
+silly extracting entry tasks/init/node/root/grunt.js
+silly extracting entry tasks/init/node/root/lib/name.js
+silly extracting entry tasks/init/node/root/test/name_test.js
+silly extracting entry tasks/init/node/rename.json
+silly extracting entry tasks/init/gruntfile/root/grunt.js
+silly extracting entry docs/README.md
+silly extracting entry docs/toc.md
+silly extracting entry docs/helpers_directives.md
+silly extracting entry docs/api_utils.md
+silly extracting entry docs/api_fail.md
+silly extracting entry docs/task_min.md
+silly extracting entry docs/getting_started.md
+silly extracting entry docs/example_gruntfiles.md
+silly extracting entry docs/faq.md
+silly extracting entry docs/api_template.md
+silly extracting entry docs/exit_codes.md
+silly extracting entry docs/api_file.md
+silly extracting entry docs/task_concat.md
+silly extracting entry docs/task_lint.md
+silly extracting entry docs/task_server.md
+silly extracting entry docs/api_config.md
+silly extracting entry docs/contributing.md
+silly extracting entry docs/api_task.md
+silly extracting entry docs/api.md
+silly extracting entry docs/api_log.md
+silly extracting entry docs/types_of_tasks.md
+silly extracting entry docs/plugins.md
+silly extracting entry docs/task_qunit.md
+silly extracting entry docs/task_init.md
+silly extracting entry lib/grunt.js
+silly extracting entry lib/grunt/log.js
+silly extracting entry lib/grunt/cli.js
+silly extracting entry lib/grunt/help.js
+silly extracting entry lib/grunt/file.js
+silly extracting entry lib/grunt/utils.js
+silly extracting entry lib/grunt/fail.js
+silly extracting entry lib/grunt/template.js
+silly extracting entry lib/grunt/config.js
+silly extracting entry lib/grunt/option.js
+silly extracting entry lib/grunt/task.js
+silly extracting entry lib/util/namespace.js
+silly extracting entry lib/util/findup.js
+silly extracting entry lib/util/task.js
+silly extracting entry bin/grunt
+silly extracting entry test/tasks/misc_test.js
+silly extracting entry test/tasks/init_test.js
+silly extracting entry test/tasks/concat_test.js
+silly extracting entry test/grunt/utils_test.js
+silly extracting entry test/grunt/file_test.js
+silly extracting entry test/grunt/template_test.js
+silly extracting entry test/util/namespace_test.js
+silly extracting entry test/util/task_test.js
+silly extracting entry test/fixtures/a.js
+silly extracting entry test/fixtures/banner3.js
+silly extracting entry test/fixtures/banner2.js
+silly extracting entry test/fixtures/banner.js
+silly extracting entry test/fixtures/b.js
+silly extracting entry test/fixtures/octocat.png
+silly extracting entry test/fixtures/test.json
+silly extracting entry test/fixtures/template.txt
+silly extracting entry dev/init.exp
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/package.json
+verbose loadDefaults grunt@0.3.9
+info preinstall grunt@0.3.9
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'async@~0.1.18', null ]
+silly cache add: name, spec, args [ undefined, 'async@~0.1.18', [ 'async@~0.1.18', null ] ]
+verbose parsed url { pathname: 'async@~0.1.18',
+verbose parsed url   path: 'async@~0.1.18',
+verbose parsed url   href: 'async@~0.1.18' }
+silly cache add: name, spec, args [ 'async', '~0.1.18', [ 'async', '~0.1.18' ] ]
+verbose parsed url { pathname: '~0.1.18', path: '~0.1.18', href: '~0.1.18' }
+verbose addNamed [ 'async', '~0.1.18' ]
+verbose addNamed [ null, '>=0.1.18- <0.2.0-' ]
+silly name, range, hasData [ 'async', '>=0.1.18- <0.2.0-', false ]
+verbose cache add [ 'colors@~0.6.0', null ]
+silly cache add: name, spec, args [ undefined, 'colors@~0.6.0', [ 'colors@~0.6.0', null ] ]
+verbose parsed url { pathname: 'colors@~0.6.0',
+verbose parsed url   path: 'colors@~0.6.0',
+verbose parsed url   href: 'colors@~0.6.0' }
+silly cache add: name, spec, args [ 'colors', '~0.6.0', [ 'colors', '~0.6.0' ] ]
+verbose parsed url { pathname: '~0.6.0', path: '~0.6.0', href: '~0.6.0' }
+verbose addNamed [ 'colors', '~0.6.0' ]
+verbose addNamed [ null, '>=0.6.0- <0.7.0-' ]
+silly name, range, hasData [ 'colors', '>=0.6.0- <0.7.0-', false ]
+verbose cache add [ 'connect@~1.8.6', null ]
+silly cache add: name, spec, args [ undefined, 'connect@~1.8.6', [ 'connect@~1.8.6', null ] ]
+verbose parsed url { pathname: 'connect@~1.8.6',
+verbose parsed url   path: 'connect@~1.8.6',
+verbose parsed url   href: 'connect@~1.8.6' }
+silly cache add: name, spec, args [ 'connect', '~1.8.6', [ 'connect', '~1.8.6' ] ]
+verbose parsed url { pathname: '~1.8.6', path: '~1.8.6', href: '~1.8.6' }
+verbose addNamed [ 'connect', '~1.8.6' ]
+verbose addNamed [ null, '>=1.8.6- <1.9.0-' ]
+silly name, range, hasData [ 'connect', '>=1.8.6- <1.9.0-', false ]
+verbose cache add [ 'dateformat@1.0.2-1.2.3', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'dateformat@1.0.2-1.2.3',
+silly cache add: name, spec, args   [ 'dateformat@1.0.2-1.2.3', null ] ]
+verbose parsed url { pathname: 'dateformat@1.0.2-1.2.3',
+verbose parsed url   path: 'dateformat@1.0.2-1.2.3',
+verbose parsed url   href: 'dateformat@1.0.2-1.2.3' }
+silly cache add: name, spec, args [ 'dateformat', '1.0.2-1.2.3', [ 'dateformat', '1.0.2-1.2.3' ] ]
+verbose parsed url { pathname: '1.0.2-1.2.3',
+verbose parsed url   path: '1.0.2-1.2.3',
+verbose parsed url   href: '1.0.2-1.2.3' }
+verbose addNamed [ 'dateformat', '1.0.2-1.2.3' ]
+verbose addNamed [ '1.0.2-1.2.3', '1.0.2-1.2.3' ]
+verbose cache add [ 'glob-whatev@~0.1.4', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'glob-whatev@~0.1.4',
+silly cache add: name, spec, args   [ 'glob-whatev@~0.1.4', null ] ]
+verbose parsed url { pathname: 'glob-whatev@~0.1.4',
+verbose parsed url   path: 'glob-whatev@~0.1.4',
+verbose parsed url   href: 'glob-whatev@~0.1.4' }
+silly cache add: name, spec, args [ 'glob-whatev', '~0.1.4', [ 'glob-whatev', '~0.1.4' ] ]
+verbose parsed url { pathname: '~0.1.4', path: '~0.1.4', href: '~0.1.4' }
+verbose addNamed [ 'glob-whatev', '~0.1.4' ]
+verbose addNamed [ null, '>=0.1.4- <0.2.0-' ]
+silly name, range, hasData [ 'glob-whatev', '>=0.1.4- <0.2.0-', false ]
+verbose cache add [ 'hooker@~0.2.3', null ]
+silly cache add: name, spec, args [ undefined, 'hooker@~0.2.3', [ 'hooker@~0.2.3', null ] ]
+verbose parsed url { pathname: 'hooker@~0.2.3',
+verbose parsed url   path: 'hooker@~0.2.3',
+verbose parsed url   href: 'hooker@~0.2.3' }
+silly cache add: name, spec, args [ 'hooker', '~0.2.3', [ 'hooker', '~0.2.3' ] ]
+verbose parsed url { pathname: '~0.2.3', path: '~0.2.3', href: '~0.2.3' }
+verbose addNamed [ 'hooker', '~0.2.3' ]
+verbose addNamed [ null, '>=0.2.3- <0.3.0-' ]
+silly name, range, hasData [ 'hooker', '>=0.2.3- <0.3.0-', false ]
+verbose cache add [ 'jshint@~0.5.9', null ]
+silly cache add: name, spec, args [ undefined, 'jshint@~0.5.9', [ 'jshint@~0.5.9', null ] ]
+verbose parsed url { pathname: 'jshint@~0.5.9',
+verbose parsed url   path: 'jshint@~0.5.9',
+verbose parsed url   href: 'jshint@~0.5.9' }
+silly cache add: name, spec, args [ 'jshint', '~0.5.9', [ 'jshint', '~0.5.9' ] ]
+verbose parsed url { pathname: '~0.5.9', path: '~0.5.9', href: '~0.5.9' }
+verbose addNamed [ 'jshint', '~0.5.9' ]
+verbose addNamed [ null, '>=0.5.9- <0.6.0-' ]
+silly name, range, hasData [ 'jshint', '>=0.5.9- <0.6.0-', false ]
+verbose cache add [ 'nodeunit@~0.6.4', null ]
+silly cache add: name, spec, args [ undefined, 'nodeunit@~0.6.4', [ 'nodeunit@~0.6.4', null ] ]
+verbose parsed url { pathname: 'nodeunit@~0.6.4',
+verbose parsed url   path: 'nodeunit@~0.6.4',
+verbose parsed url   href: 'nodeunit@~0.6.4' }
+silly cache add: name, spec, args [ 'nodeunit', '~0.6.4', [ 'nodeunit', '~0.6.4' ] ]
+verbose parsed url { pathname: '~0.6.4', path: '~0.6.4', href: '~0.6.4' }
+verbose addNamed [ 'nodeunit', '~0.6.4' ]
+verbose addNamed [ null, '>=0.6.4- <0.7.0-' ]
+silly name, range, hasData [ 'nodeunit', '>=0.6.4- <0.7.0-', false ]
+verbose cache add [ 'nopt@~1.0.10', null ]
+silly cache add: name, spec, args [ undefined, 'nopt@~1.0.10', [ 'nopt@~1.0.10', null ] ]
+verbose parsed url { pathname: 'nopt@~1.0.10',
+verbose parsed url   path: 'nopt@~1.0.10',
+verbose parsed url   href: 'nopt@~1.0.10' }
+silly cache add: name, spec, args [ 'nopt', '~1.0.10', [ 'nopt', '~1.0.10' ] ]
+verbose parsed url { pathname: '~1.0.10', path: '~1.0.10', href: '~1.0.10' }
+verbose addNamed [ 'nopt', '~1.0.10' ]
+verbose addNamed [ null, '>=1.0.10- <1.1.0-' ]
+silly name, range, hasData [ 'nopt', '>=1.0.10- <1.1.0-', false ]
+verbose cache add [ 'prompt@~0.1.12', null ]
+silly cache add: name, spec, args [ undefined, 'prompt@~0.1.12', [ 'prompt@~0.1.12', null ] ]
+verbose parsed url { pathname: 'prompt@~0.1.12',
+verbose parsed url   path: 'prompt@~0.1.12',
+verbose parsed url   href: 'prompt@~0.1.12' }
+silly cache add: name, spec, args [ 'prompt', '~0.1.12', [ 'prompt', '~0.1.12' ] ]
+verbose parsed url { pathname: '~0.1.12', path: '~0.1.12', href: '~0.1.12' }
+verbose addNamed [ 'prompt', '~0.1.12' ]
+verbose addNamed [ null, '>=0.1.12- <0.2.0-' ]
+silly name, range, hasData [ 'prompt', '>=0.1.12- <0.2.0-', false ]
+verbose cache add [ 'semver@~1.0.13', null ]
+silly cache add: name, spec, args [ undefined, 'semver@~1.0.13', [ 'semver@~1.0.13', null ] ]
+verbose parsed url { pathname: 'semver@~1.0.13',
+verbose parsed url   path: 'semver@~1.0.13',
+verbose parsed url   href: 'semver@~1.0.13' }
+silly cache add: name, spec, args [ 'semver', '~1.0.13', [ 'semver', '~1.0.13' ] ]
+verbose parsed url { pathname: '~1.0.13', path: '~1.0.13', href: '~1.0.13' }
+verbose addNamed [ 'semver', '~1.0.13' ]
+verbose addNamed [ null, '>=1.0.13- <1.1.0-' ]
+silly name, range, hasData [ 'semver', '>=1.0.13- <1.1.0-', false ]
+verbose cache add [ 'uglify-js@~1.0.7', null ]
+silly cache add: name, spec, args [ undefined, 'uglify-js@~1.0.7', [ 'uglify-js@~1.0.7', null ] ]
+verbose parsed url { pathname: 'uglify-js@~1.0.7',
+verbose parsed url   path: 'uglify-js@~1.0.7',
+verbose parsed url   href: 'uglify-js@~1.0.7' }
+silly cache add: name, spec, args [ 'uglify-js', '~1.0.7', [ 'uglify-js', '~1.0.7' ] ]
+verbose parsed url { pathname: '~1.0.7', path: '~1.0.7', href: '~1.0.7' }
+verbose addNamed [ 'uglify-js', '~1.0.7' ]
+verbose addNamed [ null, '>=1.0.7- <1.1.0-' ]
+silly name, range, hasData [ 'uglify-js', '>=1.0.7- <1.1.0-', false ]
+verbose cache add [ 'underscore@~1.2.4', null ]
+silly cache add: name, spec, args [ undefined, 'underscore@~1.2.4', [ 'underscore@~1.2.4', null ] ]
+verbose parsed url { pathname: 'underscore@~1.2.4',
+verbose parsed url   path: 'underscore@~1.2.4',
+verbose parsed url   href: 'underscore@~1.2.4' }
+silly cache add: name, spec, args [ 'underscore', '~1.2.4', [ 'underscore', '~1.2.4' ] ]
+verbose parsed url { pathname: '~1.2.4', path: '~1.2.4', href: '~1.2.4' }
+verbose addNamed [ 'underscore', '~1.2.4' ]
+verbose addNamed [ null, '>=1.2.4- <1.3.0-' ]
+silly name, range, hasData [ 'underscore', '>=1.2.4- <1.3.0-', false ]
+verbose cache add [ 'underscore.string@~2.1.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'underscore.string@~2.1.1',
+silly cache add: name, spec, args   [ 'underscore.string@~2.1.1', null ] ]
+verbose parsed url { pathname: 'underscore.string@~2.1.1',
+verbose parsed url   path: 'underscore.string@~2.1.1',
+verbose parsed url   href: 'underscore.string@~2.1.1' }
+silly cache add: name, spec, args [ 'underscore.string',
+silly cache add: name, spec, args   '~2.1.1',
+silly cache add: name, spec, args   [ 'underscore.string', '~2.1.1' ] ]
+verbose parsed url { pathname: '~2.1.1', path: '~2.1.1', href: '~2.1.1' }
+verbose addNamed [ 'underscore.string', '~2.1.1' ]
+verbose addNamed [ null, '>=2.1.1- <2.2.0-' ]
+silly name, range, hasData [ 'underscore.string', '>=2.1.1- <2.2.0-', false ]
+verbose cache add [ 'gzip-js@~0.3.1', null ]
+silly cache add: name, spec, args [ undefined, 'gzip-js@~0.3.1', [ 'gzip-js@~0.3.1', null ] ]
+verbose parsed url { pathname: 'gzip-js@~0.3.1',
+verbose parsed url   path: 'gzip-js@~0.3.1',
+verbose parsed url   href: 'gzip-js@~0.3.1' }
+silly cache add: name, spec, args [ 'gzip-js', '~0.3.1', [ 'gzip-js', '~0.3.1' ] ]
+verbose parsed url { pathname: '~0.3.1', path: '~0.3.1', href: '~0.3.1' }
+verbose addNamed [ 'gzip-js', '~0.3.1' ]
+verbose addNamed [ null, '>=0.3.1- <0.4.0-' ]
+silly name, range, hasData [ 'gzip-js', '>=0.3.1- <0.4.0-', false ]
+verbose raw, before any munging colors
+verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+verbose url resolved https://registry.npmjs.org/colors
+verbose etag "4XNK3M74QMFUPPX5RUN46VTW0"
+http GET https://registry.npmjs.org/colors
+verbose raw, before any munging dateformat/1.0.2-1.2.3
+verbose url resolving [ 'https://registry.npmjs.org/', './dateformat/1.0.2-1.2.3' ]
+verbose url resolved https://registry.npmjs.org/dateformat/1.0.2-1.2.3
+verbose etag "63HBYIQ0VB2V0J4U25MT9CGW8"
+http GET https://registry.npmjs.org/dateformat/1.0.2-1.2.3
+verbose raw, before any munging glob-whatev
+verbose url resolving [ 'https://registry.npmjs.org/', './glob-whatev' ]
+verbose url resolved https://registry.npmjs.org/glob-whatev
+verbose etag "24U0BYBSEJZJ5QF20NA79JKOC"
+http GET https://registry.npmjs.org/glob-whatev
+verbose raw, before any munging hooker
+verbose url resolving [ 'https://registry.npmjs.org/', './hooker' ]
+verbose url resolved https://registry.npmjs.org/hooker
+verbose etag "52H2TYRO1JSAU9UC9HO3O4MM7"
+http GET https://registry.npmjs.org/hooker
+verbose raw, before any munging nopt
+verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+verbose url resolved https://registry.npmjs.org/nopt
+verbose etag "CF0AXD58BDX48IAPI996MEOIQ"
+http GET https://registry.npmjs.org/nopt
+verbose raw, before any munging prompt
+verbose url resolving [ 'https://registry.npmjs.org/', './prompt' ]
+verbose url resolved https://registry.npmjs.org/prompt
+verbose etag "93TWWK4IXQN7WTKSODLKW1LYI"
+http GET https://registry.npmjs.org/prompt
+verbose raw, before any munging semver
+verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+verbose url resolved https://registry.npmjs.org/semver
+verbose etag "5059AR5DOGB1MDMG9AJ76LFRJ"
+http GET https://registry.npmjs.org/semver
+verbose raw, before any munging jshint
+verbose url resolving [ 'https://registry.npmjs.org/', './jshint' ]
+verbose url resolved https://registry.npmjs.org/jshint
+verbose etag "AZQ76Z2D9D8MTXBNUHK7XOOKE"
+http GET https://registry.npmjs.org/jshint
+verbose raw, before any munging uglify-js
+verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+verbose url resolved https://registry.npmjs.org/uglify-js
+verbose etag "2GO6UTWXT58IA1VCM2P3K4ZKA"
+http GET https://registry.npmjs.org/uglify-js
+verbose raw, before any munging underscore
+verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+verbose url resolved https://registry.npmjs.org/underscore
+verbose etag "ZBJP3RUCRWXG9J8QKKYYVSST"
+http GET https://registry.npmjs.org/underscore
+verbose raw, before any munging underscore.string
+verbose url resolving [ 'https://registry.npmjs.org/', './underscore.string' ]
+verbose url resolved https://registry.npmjs.org/underscore.string
+verbose etag "F0LM2TN2MCG4HQ1U67PBN6GL8"
+http GET https://registry.npmjs.org/underscore.string
+verbose raw, before any munging gzip-js
+verbose url resolving [ 'https://registry.npmjs.org/', './gzip-js' ]
+verbose url resolved https://registry.npmjs.org/gzip-js
+verbose etag "1R6O6VC7Q9VPTXW9ANVLDMBNH"
+http GET https://registry.npmjs.org/gzip-js
+verbose raw, before any munging connect
+verbose url resolving [ 'https://registry.npmjs.org/', './connect' ]
+verbose url resolved https://registry.npmjs.org/connect
+verbose etag "3D4UP735ORKU1E2C4IPOAKM18"
+http GET https://registry.npmjs.org/connect
+verbose raw, before any munging nodeunit
+verbose url resolving [ 'https://registry.npmjs.org/', './nodeunit' ]
+verbose url resolved https://registry.npmjs.org/nodeunit
+verbose etag "4HNA0MW4K2JHZTSTPFZXJBD18"
+http GET https://registry.npmjs.org/nodeunit
+verbose raw, before any munging async
+verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+verbose url resolved https://registry.npmjs.org/async
+verbose etag "4GJ6JGVECYCGNHKH71MO0B81K"
+http GET https://registry.npmjs.org/async
+http 304 https://registry.npmjs.org/colors
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"4XNK3M74QMFUPPX5RUN46VTW0"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag colors from cache
+silly name, range, hasData 2 [ 'colors', '>=0.6.0- <0.7.0-', true ]
+silly versions [ 'colors', [ '0.3.0', '0.5.0', '0.5.1', '0.6.0', '0.6.0-1' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '6dbb68ceb8bc60f2b313dcc5ce1599f06d19e67a',
+verbose bin dist     tarball: 'http://registry.npmjs.org/colors/-/colors-0.6.0-1.tgz' } ]
+http 304 https://registry.npmjs.org/dateformat/1.0.2-1.2.3
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"63HBYIQ0VB2V0J4U25MT9CGW8"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag dateformat/1.0.2-1.2.3 from cache
+verbose caching /home/supersonicads/.npm/colors/0.6.0-1/package/package.json
+verbose loadDefaults colors@0.6.0-1
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: 'b0220c02de98617433b72851cf47de3df2cdbee9',
+verbose bin dist     tarball: 'http://registry.npmjs.org/dateformat/-/dateformat-1.0.2-1.2.3.tgz' } ]
+verbose caching /home/supersonicads/.npm/dateformat/1.0.2-1.2.3/package/package.json
+verbose loadDefaults dateformat@1.0.2-1.2.3
+http 304 https://registry.npmjs.org/nopt
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"CF0AXD58BDX48IAPI996MEOIQ"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag nopt from cache
+http 304 https://registry.npmjs.org/hooker
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"52H2TYRO1JSAU9UC9HO3O4MM7"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag hooker from cache
+silly name, range, hasData 2 [ 'nopt', '>=1.0.10- <1.1.0-', true ]
+silly versions [ 'nopt',
+silly versions   [ '1.0.0',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.0.5',
+silly versions     '1.0.6',
+silly versions     '1.0.7',
+silly versions     '1.0.8',
+silly versions     '1.0.9',
+silly versions     '1.0.10' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '6ddd21bd2a31417b92727dd585f8a6f37608ebee',
+verbose bin dist     tarball: 'http://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz' } ]
+silly name, range, hasData 2 [ 'hooker', '>=0.2.3- <0.3.0-', true ]
+silly versions [ 'hooker', [ '0.2.3' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: 'b834f723cc4a242aa65963459df6d984c5d3d959',
+verbose bin dist     tarball: 'http://registry.npmjs.org/hooker/-/hooker-0.2.3.tgz' } ]
+http 304 https://registry.npmjs.org/prompt
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"93TWWK4IXQN7WTKSODLKW1LYI"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag prompt from cache
+verbose caching /home/supersonicads/.npm/nopt/1.0.10/package/package.json
+verbose loadDefaults nopt@1.0.10
+verbose caching /home/supersonicads/.npm/hooker/0.2.3/package/package.json
+verbose loadDefaults hooker@0.2.3
+silly name, range, hasData 2 [ 'prompt', '>=0.1.12- <0.2.0-', true ]
+silly versions [ 'prompt',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.3',
+silly versions     '0.0.4',
+silly versions     '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.1.3',
+silly versions     '0.1.4',
+silly versions     '0.1.5',
+silly versions     '0.1.7',
+silly versions     '0.1.8',
+silly versions     '0.1.9',
+silly versions     '0.1.10',
+silly versions     '0.1.11',
+silly versions     '0.1.12',
+silly versions     '0.2.0' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: 'd3114e4fb985ac66eaa35586dcb7b3fb3b27bfc6',
+verbose bin dist     tarball: 'http://registry.npmjs.org/prompt/-/prompt-0.1.12.tgz' } ]
+verbose caching /home/supersonicads/.npm/prompt/0.1.12/package/package.json
+verbose loadDefaults prompt@0.1.12
+http 304 https://registry.npmjs.org/semver
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"5059AR5DOGB1MDMG9AJ76LFRJ"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag semver from cache
+silly name, range, hasData 2 [ 'semver', '>=1.0.13- <1.1.0-', true ]
+silly versions [ 'semver',
+silly versions   [ '1.0.0',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.0.5',
+silly versions     '1.0.6',
+silly versions     '1.0.7',
+silly versions     '1.0.8',
+silly versions     '1.0.9',
+silly versions     '1.0.10',
+silly versions     '1.0.11',
+silly versions     '1.0.12',
+silly versions     '1.0.13',
+silly versions     '1.0.14' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: 'cac5e2d55a6fbf958cb220ae844045071c78f676',
+verbose bin dist     tarball: 'http://registry.npmjs.org/semver/-/semver-1.0.14.tgz' } ]
+verbose caching /home/supersonicads/.npm/semver/1.0.14/package/package.json
+verbose loadDefaults semver@1.0.14
+http 304 https://registry.npmjs.org/uglify-js
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"2GO6UTWXT58IA1VCM2P3K4ZKA"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag uglify-js from cache
+http 304 https://registry.npmjs.org/glob-whatev
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"24U0BYBSEJZJ5QF20NA79JKOC"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag glob-whatev from cache
+http 304 https://registry.npmjs.org/jshint
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"AZQ76Z2D9D8MTXBNUHK7XOOKE"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag jshint from cache
+http 304 https://registry.npmjs.org/underscore
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"ZBJP3RUCRWXG9J8QKKYYVSST"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag underscore from cache
+http 304 https://registry.npmjs.org/underscore.string
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"F0LM2TN2MCG4HQ1U67PBN6GL8"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag underscore.string from cache
+silly name, range, hasData 2 [ 'uglify-js', '>=1.0.7- <1.1.0-', true ]
+silly versions [ 'uglify-js',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.3',
+silly versions     '0.0.4',
+silly versions     '0.0.5',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.0.5',
+silly versions     '1.0.6',
+silly versions     '1.0.7',
+silly versions     '1.1.0',
+silly versions     '1.1.1',
+silly versions     '1.2.0',
+silly versions     '1.2.1',
+silly versions     '1.2.2',
+silly versions     '1.2.3',
+silly versions     '1.2.4',
+silly versions     '1.2.5',
+silly versions     '1.2.6',
+silly versions     '1.3.0' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '2b7a10e628f88029a553d2b4bbb17409343755c0',
+verbose bin dist     tarball: 'http://registry.npmjs.org/uglify-js/-/uglify-js-1.0.7.tgz' } ]
+silly name, range, hasData 2 [ 'glob-whatev', '>=0.1.4- <0.2.0-', true ]
+silly versions [ 'glob-whatev',
+silly versions   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '965c012728ebc6aa4016ea096109a324f0790852',
+verbose bin dist     tarball: 'http://registry.npmjs.org/glob-whatev/-/glob-whatev-0.1.6.tgz' } ]
+silly name, range, hasData 2 [ 'jshint', '>=0.5.9- <0.6.0-', true ]
+silly versions [ 'jshint',
+silly versions   [ '0.1.8',
+silly versions     '0.1.9',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.4.0',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.5.4',
+silly versions     '0.5.5',
+silly versions     '0.5.6',
+silly versions     '0.5.7',
+silly versions     '0.5.8',
+silly versions     '0.5.9',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.7.0',
+silly versions     '0.7.1' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: 'ccb5ba9d2818dfe78857feaa71ccba0cb10aebc9',
+verbose bin dist     tarball: 'http://registry.npmjs.org/jshint/-/jshint-0.5.9.tgz' } ]
+http 304 https://registry.npmjs.org/async
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"4GJ6JGVECYCGNHKH71MO0B81K"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag async from cache
+http 304 https://registry.npmjs.org/connect
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"3D4UP735ORKU1E2C4IPOAKM18"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag connect from cache
+http 304 https://registry.npmjs.org/nodeunit
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"4HNA0MW4K2JHZTSTPFZXJBD18"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag nodeunit from cache
+http 304 https://registry.npmjs.org/gzip-js
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"1R6O6VC7Q9VPTXW9ANVLDMBNH"',
+silly get cb     date: 'Sat, 16 Jun 2012 12:34:55 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag gzip-js from cache
+silly name, range, hasData 2 [ 'underscore', '>=1.2.4- <1.3.0-', true ]
+silly versions [ 'underscore',
+silly versions   [ '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.1.0',
+silly versions     '1.1.1',
+silly versions     '1.1.2',
+silly versions     '1.1.3',
+silly versions     '1.1.4',
+silly versions     '1.1.5',
+silly versions     '1.1.6',
+silly versions     '1.1.7',
+silly versions     '1.2.0',
+silly versions     '1.2.1',
+silly versions     '1.2.2',
+silly versions     '1.2.3',
+silly versions     '1.2.4',
+silly versions     '1.3.0',
+silly versions     '1.3.1',
+silly versions     '1.3.2',
+silly versions     '1.3.3' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: 'e8da6241aa06f64df2473bb2590b8c17c84c3c7e',
+verbose bin dist     tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.2.4.tgz' } ]
+verbose caching /home/supersonicads/.npm/uglify-js/1.0.7/package/package.json
+verbose loadDefaults uglify-js@1.0.7
+verbose caching /home/supersonicads/.npm/glob-whatev/0.1.6/package/package.json
+verbose loadDefaults glob-whatev@0.1.6
+verbose caching /home/supersonicads/.npm/jshint/0.5.9/package/package.json
+verbose loadDefaults jshint@0.5.9
+silly name, range, hasData 2 [ 'underscore.string', '>=2.1.1- <2.2.0-', true ]
+silly versions [ 'underscore.string',
+silly versions   [ '0.9.2',
+silly versions     '1.0.0',
+silly versions     '1.1.3',
+silly versions     '1.1.4',
+silly versions     '1.1.5',
+silly versions     '1.1.6',
+silly versions     '2.0.0',
+silly versions     '2.1.0',
+silly versions     '2.1.1',
+silly versions     '2.2.0rc' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '458397799114b9b67f6030bb527b0afae689c061',
+verbose bin dist     tarball: 'http://registry.npmjs.org/underscore.string/-/underscore.string-2.1.1.tgz' } ]
+silly name, range, hasData 2 [ 'connect', '>=1.8.6- <1.9.0-', true ]
+silly versions [ 'connect',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.3',
+silly versions     '0.0.4',
+silly versions     '0.0.5',
+silly versions     '0.0.6',
+silly versions     '0.1.0',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.2.5',
+silly versions     '0.2.6',
+silly versions     '0.2.7',
+silly versions     '0.3.0',
+silly versions     '0.4.0',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.5.4',
+silly versions     '0.5.5',
+silly versions     '0.5.6',
+silly versions     '0.5.7',
+silly versions     '0.5.8',
+silly versions     '0.5.9',
+silly versions     '0.5.10',
+silly versions     '1.0.0',
+silly versions     '1.0.1',
+silly versions     '1.7.2',
+silly versions     '1.7.3',
+silly versions     '1.8.0',
+silly versions     '1.8.1',
+silly versions     '1.8.2',
+silly versions     '1.8.3',
+silly versions     '1.8.4',
+silly versions     '1.8.5',
+silly versions     '2.0.0',
+silly versions     '2.0.1',
+silly versions     '2.0.2',
+silly versions     '2.0.3',
+silly versions     '1.8.6',
+silly versions     '2.1.0',
+silly versions     '2.1.1',
+silly versions     '2.1.2',
+silly versions     '1.8.7',
+silly versions     '2.1.3',
+silly versions     '2.2.0',
+silly versions     '2.2.1',
+silly versions     '2.2.2',
+silly versions     '2.3.0',
+silly versions     '2.3.1',
+silly versions     '2.3.2',
+silly versions     '2.3.3' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: 'b620281884d455fab94c693d2db748652d6c8c17',
+verbose bin dist     tarball: 'http://registry.npmjs.org/connect/-/connect-1.8.7.tgz' } ]
+silly name, range, hasData 2 [ 'nodeunit', '>=0.6.4- <0.7.0-', true ]
+silly versions [ 'nodeunit',
+silly versions   [ '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.3.1',
+silly versions     '0.4.0',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.5.4',
+silly versions     '0.5.5',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.6.4',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.7.4' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '9bd543035b6f86d9db2030d872dee28513dbf499',
+verbose bin dist     tarball: 'http://registry.npmjs.org/nodeunit/-/nodeunit-0.6.4.tgz' } ]
+silly name, range, hasData 2 [ 'gzip-js', '>=0.3.1- <0.4.0-', true ]
+silly versions [ 'gzip-js', [ '0.3.0', '0.3.1' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '7a367c4d40921033010218a2740659db8caf2792',
+verbose bin dist     tarball: 'http://registry.npmjs.org/gzip-js/-/gzip-js-0.3.1.tgz' } ]
+silly name, range, hasData 2 [ 'async', '>=0.1.18- <0.2.0-', true ]
+silly versions [ 'async',
+silly versions   [ '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.1.3',
+silly versions     '0.1.4',
+silly versions     '0.1.5',
+silly versions     '0.1.6',
+silly versions     '0.1.7',
+silly versions     '0.1.8',
+silly versions     '0.1.9',
+silly versions     '0.1.10',
+silly versions     '0.1.11',
+silly versions     '0.1.12',
+silly versions     '0.1.13',
+silly versions     '0.1.14',
+silly versions     '0.1.15',
+silly versions     '0.1.16',
+silly versions     '0.1.17',
+silly versions     '0.1.18',
+silly versions     '0.1.19',
+silly versions     '0.1.20',
+silly versions     '0.1.21',
+silly versions     '0.1.22' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0e-v83.6.6.25-linux-x64-3.0.0-20-generic',
+verbose bin dist   { shasum: '0fc1aaa088a0e3ef0ebe2d8831bab0dcf8845061',
+verbose bin dist     tarball: 'http://registry.npmjs.org/async/-/async-0.1.22.tgz' } ]
+verbose caching /home/supersonicads/.npm/underscore/1.2.4/package/package.json
+verbose loadDefaults underscore@1.2.4
+verbose caching /home/supersonicads/.npm/underscore.string/2.1.1/package/package.json
+verbose loadDefaults underscore.string@2.1.1
+verbose caching /home/supersonicads/.npm/connect/1.8.7/package/package.json
+verbose loadDefaults connect@1.8.7
+verbose caching /home/supersonicads/.npm/gzip-js/0.3.1/package/package.json
+verbose loadDefaults gzip-js@0.3.1
+verbose caching /home/supersonicads/.npm/nodeunit/0.6.4/package/package.json
+verbose loadDefaults nodeunit@0.6.4
+verbose caching /home/supersonicads/.npm/async/0.1.22/package/package.json
+verbose loadDefaults async@0.1.22
+silly resolved [ { name: 'colors',
+silly resolved     description: 'get colors in your node.js console like what',
+silly resolved     version: '0.6.0-1',
+silly resolved     author: { name: 'Marak Squires' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/Marak/colors.js.git' },
+silly resolved     engines: { node: '>=0.1.90' },
+silly resolved     main: 'colors',
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'colors@0.6.0-1',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'colors@~0.6.0',
+silly resolved     scripts: {} },
+silly resolved   { name: 'dateformat',
+silly resolved     description: 'A node.js package for Steven Levithan\'s excellent dateFormat() function.',
+silly resolved     maintainers: 'Felix Geisendörfer <felix@debuggable.com>',
+silly resolved     homepage: 'https://github.com/felixge/node-dateformat',
+silly resolved     author: { name: 'Steven Levithan' },
+silly resolved     version: '1.0.2-1.2.3',
+silly resolved     main: './lib/dateformat',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'dateformat@1.0.2-1.2.3',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'dateformat@1.0.2-1.2.3',
+silly resolved     scripts: {} },
+silly resolved   { name: 'nopt',
+silly resolved     version: '1.0.10',
+silly resolved     description: 'Option parsing for Node, supporting types, shorthands, etc. Used by npm.',
+silly resolved     author: 
+silly resolved      { name: 'Isaac Z. Schlueter',
+silly resolved        email: 'i@izs.me',
+silly resolved        url: 'http://blog.izs.me/' },
+silly resolved     main: 'lib/nopt.js',
+silly resolved     scripts: { test: 'node lib/nopt.js' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/nopt.git' },
+silly resolved     bin: { nopt: './bin/nopt.js' },
+silly resolved     license: 
+silly resolved      { type: 'MIT',
+silly resolved        url: 'https://github.com/isaacs/nopt/raw/master/LICENSE' },
+silly resolved     dependencies: { abbrev: '1' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'nopt@1.0.10',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'nopt@~1.0.10' },
+silly resolved   { name: 'hooker',
+silly resolved     description: 'Monkey-patch (hook) functions for debugging and stuff.',
+silly resolved     version: '0.2.3',
+silly resolved     homepage: 'http://github.com/cowboy/javascript-hooker',
+silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/cowboy/javascript-hooker.git' },
+silly resolved     bugs: { url: 'https://github.com/cowboy/javascript-hooker/issues' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'https://github.com/cowboy/javascript-hooker/blob/master/LICENSE-MIT' } ],
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { grunt: '~0.2.1' },
+silly resolved     keywords: [ 'patch', 'hook', 'function', 'debug', 'aop' ],
+silly resolved     engines: { node: '*' },
+silly resolved     main: 'lib/hooker',
+silly resolved     scripts: { test: 'grunt test' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'hooker@0.2.3',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'hooker@~0.2.3' },
+silly resolved   { name: 'prompt',
+silly resolved     description: 'A beautiful command-line prompt for node.js',
+silly resolved     version: '0.1.12',
+silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Charlie Robbins', email: 'charlie@nodejitsu.com' },
+silly resolved        { name: 'Joshua Holbrook', email: 'josh.holbrook@gmail.com' },
+silly resolved        { name: 'Bradley Meck', email: 'bradley.meck@gmail.com' },
+silly resolved        { name: 'Maciej Malecki', email: 'maciej@nodejitsu.com' } ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/flatiron/prompt.git' },
+silly resolved     dependencies: 
+silly resolved      { async: '0.1.x',
+silly resolved        colors: '0.x.x',
+silly resolved        pkginfo: '0.x.x',
+silly resolved        winston: '0.5.x' },
+silly resolved     devDependencies: { vows: '0.6.x' },
+silly resolved     main: './lib/prompt',
+silly resolved     scripts: 
+silly resolved      { test: 'vows test/prompt-test.js --spec',
+silly resolved        'test-all': 'vows --spec' },
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'prompt@0.1.12',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'prompt@~0.1.12' },
+silly resolved   { name: 'semver',
+silly resolved     version: '1.0.14',
+silly resolved     description: 'The semantic version parser used by npm.',
+silly resolved     main: 'semver.js',
+silly resolved     scripts: { test: 'tap test.js' },
+silly resolved     devDependencies: { tap: '0.x >=0.0.4' },
+silly resolved     license: 
+silly resolved      { type: 'MIT',
+silly resolved        url: 'https://github.com/isaacs/semver/raw/master/LICENSE' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-semver.git' },
+silly resolved     bin: { semver: './bin/semver' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'semver@1.0.14',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'semver@~1.0.13' },
+silly resolved   { name: 'uglify-js',
+silly resolved     author: 
+silly resolved      { name: 'Mihai Bazon',
+silly resolved        email: 'mihai.bazon@gmail.com',
+silly resolved        url: 'http://mihai.bazon.net/blog' },
+silly resolved     version: '1.0.7',
+silly resolved     main: './uglify-js.js',
+silly resolved     bin: { uglifyjs: './bin/uglifyjs' },
+silly resolved     repository: { type: 'git', url: 'git@github.com:mishoo/UglifyJS.git' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'uglify-js@1.0.7',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'uglify-js@~1.0.7' },
+silly resolved   { name: 'glob-whatev',
+silly resolved     description: 'A quick and dirty file globbing utility based on minimatch.',
+silly resolved     version: '0.1.6',
+silly resolved     homepage: 'http://github.com/cowboy/node-glob-whatev',
+silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/cowboy/node-glob-whatev.git' },
+silly resolved     bugs: { url: 'https://github.com/cowboy/node-glob-whatev/issues' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/cowboy/node-glob-whatev/blob/master/LICENSE-MIT' } ],
+silly resolved     dependencies: { minimatch: '~0.2.4' },
+silly resolved     devDependencies: { grunt: '~0.3.0' },
+silly resolved     keywords: [ 'glob', 'wildcard', 'star', 'file' ],
+silly resolved     engines: { node: '>= 0.6.0' },
+silly resolved     main: 'lib/glob',
+silly resolved     scripts: { test: 'grunt test' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'glob-whatev@0.1.6',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'glob-whatev@~0.1.4' },
+silly resolved   { name: 'jshint',
+silly resolved     version: '0.5.9',
+silly resolved     description: 'A CLI for JSHint',
+silly resolved     homepage: 'http://github.com/jshint/node-jshint',
+silly resolved     author: 
+silly resolved      { name: 'Brent Lintner',
+silly resolved        email: 'brent.lintner@gmail.com',
+silly resolved        url: 'http://github.com/brentlintner' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://www.opensource.org/licenses/mit-license.php' } ],
+silly resolved     bin: { jshint: './bin/hint' },
+silly resolved     main: 'packages/jshint/jshint',
+silly resolved     files: 
+silly resolved      [ 'packages/jshint/README.markdown',
+silly resolved        'packages/jshint/jshint.js',
+silly resolved        'README.md',
+silly resolved        'LICENSE',
+silly resolved        'HELP',
+silly resolved        'bin/hint',
+silly resolved        'lib' ],
+silly resolved     dependencies: { argsparser: '>=0.0.3', minimatch: '>=0.0.4' },
+silly resolved     devDependencies: { 'jasmine-node': '1.0.7' },
+silly resolved     preferGlobal: true,
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'jshint@0.5.9',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'jshint@~0.5.9' },
+silly resolved   { name: 'underscore',
+silly resolved     description: 'JavaScript\'s functional programming helper library.',
+silly resolved     homepage: 'http://documentcloud.github.com/underscore/',
+silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+silly resolved     contributors: [],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/documentcloud/underscore.git' },
+silly resolved     main: 'underscore.js',
+silly resolved     version: '1.2.4',
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'underscore@1.2.4',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'underscore@~1.2.4' },
+silly resolved   { name: 'underscore.string',
+silly resolved     version: '2.1.1',
+silly resolved     description: 'String manipulation extensions for Underscore.js javascript library.',
+silly resolved     homepage: 'http://epeli.github.com/underscore.string/',
+silly resolved     contributors: 
+silly resolved      [ { name: 'Esa-Matti Suuronen',
+silly resolved          email: 'esa-matti@suuronen.org',
+silly resolved          url: 'http://esa-matti.suuronen.org/' },
+silly resolved        { name: 'Edward Tsech', email: 'edtsech@gmail.com' },
+silly resolved        { name: 'Sasha Koss',
+silly resolved          email: 'kossnocorp@gmail.com',
+silly resolved          url: 'http://koss.nocorp.me/' },
+silly resolved        { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Pete Kruckenberg',
+silly resolved          email: 'https://github.com/kruckenb',
+silly resolved          url: '<https://github.com/kruckenb>' },
+silly resolved        { name: 'Paul Chavard',
+silly resolved          email: 'paul@chavard.net',
+silly resolved          url: '<http://tchak.net>' },
+silly resolved        { name: 'Ed Finkler',
+silly resolved          email: 'coj@funkatron.com',
+silly resolved          url: '<http://funkatron.com>' },
+silly resolved        { name: 'Pavel Pravosud', email: 'rwz@duckroll.ru' } ],
+silly resolved     keywords: [ 'underscore', 'string' ],
+silly resolved     main: './lib/underscore.string',
+silly resolved     directories: { lib: './lib' },
+silly resolved     engines: { node: '*' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/epeli/underscore.string.git' },
+silly resolved     bugs: { url: 'https://github.com/epeli/underscore.string/issues' },
+silly resolved     licenses: [ { type: 'MIT' } ],
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'underscore.string@2.1.1',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'underscore.string@~2.1.1' },
+silly resolved   { name: 'connect',
+silly resolved     version: '1.8.7',
+silly resolved     description: 'High performance middleware framework',
+silly resolved     keywords: [ 'framework', 'web', 'middleware', 'connect', 'rack' ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/senchalabs/connect.git' },
+silly resolved     author: 
+silly resolved      { name: 'TJ Holowaychuk',
+silly resolved        email: 'tj@vision-media.ca',
+silly resolved        url: 'http://tjholowaychuk.com' },
+silly resolved     dependencies: { qs: '>= 0.4.0', mime: '>= 0.0.1', formidable: '1.0.x' },
+silly resolved     devDependencies: 
+silly resolved      { expresso: '0.9.2',
+silly resolved        koala: '0.1.2',
+silly resolved        less: '1.1.1',
+silly resolved        sass: '0.5.0',
+silly resolved        markdown: '0.2.1',
+silly resolved        ejs: '0.4.3',
+silly resolved        should: '0.3.2' },
+silly resolved     publishConfig: { tag: '1.8' },
+silly resolved     main: 'index',
+silly resolved     engines: { node: '>= 0.4.1 < 0.7.0' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'connect@1.8.7',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'connect@~1.8.6' },
+silly resolved   { author: 
+silly resolved      { name: 'T. Jameson Little',
+silly resolved        email: 't.jameson.little@gmail.com' },
+silly resolved     name: 'gzip-js',
+silly resolved     description: 'GZIP in pure JavaScript (works in the browser)',
+silly resolved     version: '0.3.1',
+silly resolved     repository: { type: 'git', url: 'git://github.com/beatgammit/gzip-js.git' },
+silly resolved     main: './lib/gzip.js',
+silly resolved     bin: { 'gzip-js': './bin/gzip.js', 'gunzip-js': './bin/gunzip.js' },
+silly resolved     scripts: { test: 'cd test; ./runner.py; cd -' },
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     dependencies: { crc32: '>= 0.2.2', 'deflate-js': '>= 0.2.2' },
+silly resolved     devDependencies: { optimist: '~0.2' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'gzip-js@0.3.1',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'gzip-js@~0.3.1' },
+silly resolved   { name: 'async',
+silly resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+silly resolved     main: './index',
+silly resolved     author: { name: 'Caolan McMahon' },
+silly resolved     version: '0.1.22',
+silly resolved     repository: { type: 'git', url: 'git://github.com/caolan/async.git' },
+silly resolved     bugs: { url: 'http://github.com/caolan/async/issues' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/caolan/async/raw/master/LICENSE' } ],
+silly resolved     devDependencies: { nodeunit: '>0.0.0', 'uglify-js': '1.2.x', nodelint: '>0.0.0' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'async@0.1.22',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'async@~0.1.18' },
+silly resolved   { name: 'nodeunit',
+silly resolved     description: 'Easy unit testing for node.js and the browser.',
+silly resolved     maintainers: [ { name: 'Caolan McMahon', url: 'https://github.com/caolan' } ],
+silly resolved     contributors: 
+silly resolved      [ { name: 'Romain Beauxis', url: 'https://github.com/toots' },
+silly resolved        { name: 'Alex Gorbatchev',
+silly resolved          url: 'https://github.com/alexgorbatchev' },
+silly resolved        { name: 'Alex Wolfe', url: 'https://github.com/alexkwolfe' },
+silly resolved        { name: 'Carl Fürstenberg', url: 'https://github.com/azatoth' },
+silly resolved        { name: 'Gerad Suyderhoud', url: 'https://github.com/gerad' },
+silly resolved        { name: 'Kadir Pekel', url: 'https://github.com/coffeemate' },
+silly resolved        { name: 'Oleg Efimov', url: 'https://github.com/Sannis' },
+silly resolved        { name: 'Orlando Vazquez', url: 'https://github.com/orlandov' },
+silly resolved        { name: 'Ryan Dahl', url: 'https://github.com/ry' },
+silly resolved        { name: 'Sam Stephenson',
+silly resolved          url: 'https://github.com/sstephenson' },
+silly resolved        { name: 'Thomas Mayfield',
+silly resolved          url: 'https://github.com/thegreatape' },
+silly resolved        { name: 'Elijah Insua',
+silly resolved          email: 'tmpvar@gmail.com',
+silly resolved          url: 'http://tmpvar.com' } ],
+silly resolved     version: '0.6.4',
+silly resolved     repository: { type: 'git', url: 'git://github.com/caolan/nodeunit.git' },
+silly resolved     devDependencies: { 'uglify-js': '>=1.1.0' },
+silly resolved     bugs: { url: 'http://github.com/caolan/nodeunit/issues' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/caolan/nodeunit/raw/master/LICENSE' } ],
+silly resolved     directories: { lib: './lib', doc: './doc', man: './man1' },
+silly resolved     bin: { nodeunit: './bin/nodeunit' },
+silly resolved     dependencies: { 'tap-assert': '>=0.0.9', 'tap-producer': '>=0.0.1' },
+silly resolved     _npmUser: { name: 'unbalanced', email: 'amir.souchami@gmail.com' },
+silly resolved     _id: 'nodeunit@0.6.4',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     man: [ 'man1/nodeunit.1' ],
+silly resolved     _from: 'nodeunit@~0.6.4' } ]
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt colors@0.6.0-1
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt dateformat@1.0.2-1.2.3
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt nopt@1.0.10
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt hooker@0.2.3
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt prompt@0.1.12
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt semver@1.0.14
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt uglify-js@1.0.7
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt glob-whatev@0.1.6
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt jshint@0.5.9
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt underscore@1.2.4
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt underscore.string@2.1.1
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt connect@1.8.7
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt gzip-js@0.3.1
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt async@0.1.22
+info into /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt nodeunit@0.6.4
+info installOne colors@0.6.0-1
+info installOne dateformat@1.0.2-1.2.3
+info installOne nopt@1.0.10
+info installOne hooker@0.2.3
+info installOne prompt@0.1.12
+info installOne semver@1.0.14
+info installOne uglify-js@1.0.7
+info installOne glob-whatev@0.1.6
+info installOne jshint@0.5.9
+info installOne underscore@1.2.4
+info installOne underscore.string@2.1.1
+info installOne connect@1.8.7
+info installOne gzip-js@0.3.1
+info installOne async@0.1.22
+info installOne nodeunit@0.6.4
+verbose from cache /home/supersonicads/.npm/colors/0.6.0-1/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/colors
+verbose from cache /home/supersonicads/.npm/dateformat/1.0.2-1.2.3/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/dateformat
+verbose from cache /home/supersonicads/.npm/nopt/1.0.10/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/nopt
+verbose from cache /home/supersonicads/.npm/hooker/0.2.3/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/hooker
+verbose from cache /home/supersonicads/.npm/prompt/0.1.12/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/prompt
+verbose from cache /home/supersonicads/.npm/semver/1.0.14/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver
+verbose from cache /home/supersonicads/.npm/uglify-js/1.0.7/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/uglify-js
+verbose from cache /home/supersonicads/.npm/jshint/0.5.9/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/jshint
+verbose from cache /home/supersonicads/.npm/underscore/1.2.4/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/underscore
+verbose from cache /home/supersonicads/.npm/underscore.string/2.1.1/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/underscore.string
+verbose from cache /home/supersonicads/.npm/connect/1.8.7/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/connect
+verbose from cache /home/supersonicads/.npm/gzip-js/0.3.1/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/gzip-js
+verbose from cache /home/supersonicads/.npm/async/0.1.22/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/async
+verbose from cache /home/supersonicads/.npm/glob-whatev/0.1.6/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/glob-whatev
+verbose from cache /home/supersonicads/.npm/nodeunit/0.6.4/package/package.json
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/nodeunit
+verbose unpack /home/supersonicads/.npm/colors/0.6.0-1/package.tgz
+verbose unpack /home/supersonicads/.npm/dateformat/1.0.2-1.2.3/package.tgz
+verbose unpack /home/supersonicads/.npm/nopt/1.0.10/package.tgz
+verbose unpack /home/supersonicads/.npm/hooker/0.2.3/package.tgz
+verbose unpack /home/supersonicads/.npm/prompt/0.1.12/package.tgz
+verbose unpack /home/supersonicads/.npm/semver/1.0.14/package.tgz
+verbose unpack /home/supersonicads/.npm/uglify-js/1.0.7/package.tgz
+verbose unpack /home/supersonicads/.npm/jshint/0.5.9/package.tgz
+verbose unpack /home/supersonicads/.npm/underscore/1.2.4/package.tgz
+verbose unpack /home/supersonicads/.npm/underscore.string/2.1.1/package.tgz
+verbose unpack /home/supersonicads/.npm/connect/1.8.7/package.tgz
+verbose unpack /home/supersonicads/.npm/gzip-js/0.3.1/package.tgz
+verbose unpack /home/supersonicads/.npm/async/0.1.22/package.tgz
+verbose unpack /home/supersonicads/.npm/glob-whatev/0.1.6/package.tgz
+verbose unpack /home/supersonicads/.npm/nodeunit/0.6.4/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry package.json
+silly extracting entry test.js
+silly extracting entry example.js
+silly extracting entry Readme.md
+silly extracting entry lib/dateformat.js
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry README.md
+silly extracting entry child.js
+silly extracting entry README.md
+silly extracting entry LICENSE
+silly extracting entry README.md
+silly extracting entry LICENSE
+silly extracting entry .npmignore
+silly extracting entry README
+silly extracting entry Gemfile.lock
+silly extracting entry .travis.yml
+silly extracting entry .npmignore
+silly extracting entry uglify-js.js
+silly extracting entry .npmignore
+silly extracting entry LICENSE
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry Rakefile
+silly extracting entry LICENSE
+silly extracting entry index.js
+silly extracting entry colors.js
+silly extracting entry MIT-LICENSE.txt
+silly extracting entry test/test_weekofyear.js
+silly extracting entry test/test_weekofyear.sh
+silly extracting entry LICENSE
+silly extracting entry bin/nopt.js
+silly extracting entry bin/uglifyjs
+silly extracting entry README.html
+silly extracting entry test.js
+silly extracting entry semver.js
+silly extracting entry ReadMe.md
+silly extracting entry LICENSE
+silly extracting entry .travis.yml
+silly extracting entry grunt.js
+silly extracting entry parent.js
+silly extracting entry LICENSE
+silly extracting entry underscore.js
+silly extracting entry bin/hint
+silly extracting entry lib/cli.js
+silly extracting entry example.html
+silly extracting entry grunt.js
+silly extracting entry LICENSE-MIT
+silly extracting entry LICENSE
+silly extracting entry index.js
+silly extracting entry index.js
+silly extracting entry lib/connect.js
+silly extracting entry bin/gunzip.js
+silly extracting entry bin/gzip.js
+silly extracting entry dist/ba-hooker.min.js
+silly extracting entry README.markdown
+silly extracting entry dist/underscore.string.min.js
+silly extracting entry bin/semver
+silly extracting entry lib/hint.js
+silly extracting entry dist/ba-hooker.js
+silly extracting entry lib/reporters/non_error.js
+silly extracting entry LICENSE-MIT
+silly extracting entry CONTRIBUTORS.md
+silly extracting entry img/example_fail.png
+silly extracting entry lib/reporters/jslint_xml.js
+silly extracting entry lib/hooker.js
+silly extracting entry test/hooker_test.js
+silly extracting entry examples/my-program.js
+silly extracting entry lib/nopt.js
+silly extracting entry docstyle.css
+silly extracting entry tmp/test.js
+silly extracting entry docs/prompt.html
+silly extracting entry docs/docco.css
+silly extracting entry underscore-min.js
+silly extracting entry index.js
+silly extracting entry lib/glob.js
+silly extracting entry test/glob_test.js
+silly extracting entry lib/cache.js
+silly extracting entry lib/https.js
+silly extracting entry Makefile
+silly extracting entry .gitmodules
+silly extracting entry examples/password.js
+silly extracting entry raw/underscore.psd
+silly extracting entry lib/gzip.js
+silly extracting entry test/test-files/hello-world.txt
+silly extracting entry examples/add-properties.js
+silly extracting entry lib/index.js
+silly extracting entry lib/async.js
+silly extracting entry lib/underscore.string.js
+silly extracting entry Gemfile
+silly extracting entry examples/simple-prompt.js
+silly extracting entry test/fixture/foo/bar/baz/boot
+silly extracting entry examples/existing-properties.js
+silly extracting entry test/fixture/foo/bar/boot
+silly extracting entry img/example_machineout.png
+silly extracting entry examples/history.js
+silly extracting entry test/fixture/foo/boot
+silly extracting entry lib/reporters/default.js
+silly extracting entry HELP
+silly extracting entry examples/property-prompt.js
+silly extracting entry lib/prompt.js
+silly extracting entry test/interactive-prompt-test.js
+silly extracting entry tmp/instrument.js
+silly extracting entry tmp/hoist.js
+silly extracting entry test/prompt-test.js
+silly extracting entry test/helpers.js
+silly extracting entry index.html
+silly extracting entry test/test-files/spec.txt
+silly extracting entry test/helpers.py
+silly extracting entry tmp/instrument2.js
+silly extracting entry lib/utils.js
+silly extracting entry lib/patch.js
+silly extracting entry test/underscore.js
+silly extracting entry test/run-qunit.js
+silly extracting entry lib/object-ast.js
+silly extracting entry lib/squeeze-more.js
+silly extracting entry packages/jshint/jshint.js
+silly extracting entry packages/jshint/README.markdown
+silly extracting entry lib/process.js
+silly extracting entry test/fixture/boot
+silly extracting entry lib/parse-js.js
+silly extracting entry README.org
+silly extracting entry lib/http.js
+silly extracting entry lib/public/error.html
+silly extracting entry test/beautify.js
+silly extracting entry test/testparser.js
+silly extracting entry test/unit/scripts.js
+silly extracting entry lib/public/style.css
+silly extracting entry test/speed.js
+silly extracting entry test/strings_standalone.js
+silly extracting entry test/unit/compress/expected/var.js
+silly extracting entry lib/public/favicon.ico
+silly extracting entry test/unit/compress/expected/issue21.js
+silly extracting entry lib/public/directory.html
+silly extracting entry test/unzipTest.py
+silly extracting entry test/test.txt
+silly extracting entry test/strings.js
+silly extracting entry test/unit/compress/expected/issue25.js
+silly extracting entry test/test.html
+silly extracting entry test/unit/compress/expected/issue17.js
+silly extracting entry test/test_standalone.html
+silly extracting entry test/unit/compress/expected/issue10.js
+silly extracting entry test/unit/compress/expected/empty-blocks.js
+silly extracting entry test/test_underscore/collections.js
+silly extracting entry test/unit/compress/expected/with.js
+silly extracting entry test/test_underscore/functions.js
+silly extracting entry test/unit/compress/expected/issue69.js
+silly extracting entry test/test_underscore/temp.js
+silly extracting entry test/unit/compress/expected/issue11.js
+silly extracting entry test/test_underscore/arrays.js
+silly extracting entry test/test_underscore/chaining.js
+silly extracting entry test/unit/compress/expected/array3.js
+silly extracting entry test/test_underscore/utility.js
+silly extracting entry test/zipTest.py
+silly extracting entry test/runner.py
+silly extracting entry test/test_underscore/speed.js
+silly extracting entry test/test_underscore/objects.js
+silly extracting entry lib/public/icons/page_white_camera.png
+silly extracting entry lib/public/icons/page_gear.png
+silly extracting entry lib/public/icons/page_white_c.png
+silly extracting entry test/test_underscore/vendor/jslitmus.js
+silly extracting entry test/test_underscore/vendor/jquery.js
+silly extracting entry test/test_underscore/vendor/qunit.js
+silly extracting entry test/unit/compress/expected/issue14.js
+silly extracting entry test/unit/compress/expected/issue68.js
+silly extracting entry img/example_pass.png
+silly extracting entry share/license.js
+silly extracting entry test/unit/compress/expected/ifreturn2.js
+silly extracting entry lib/public/icons/page_white_get.png
+silly extracting entry lib/public/icons/page_white_paintbrush.png
+silly extracting entry test/unit/compress/expected/issue48.js
+silly extracting entry test/unit/compress/expected/issue50.js
+silly extracting entry test/test_underscore/vendor/qunit.css
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/dateformat/package.json
+verbose loadDefaults dateformat@1.0.2-1.2.3
+silly extracting entry test/test_underscore/temp_tests.html
+silly extracting entry test/unit/compress/expected/array4.js
+silly extracting entry test/test_underscore/test.html
+silly extracting entry test/unit/compress/expected/array1.js
+silly extracting entry test/unit/compress/expected/ifreturn.js
+info preinstall dateformat@1.0.2-1.2.3
+silly extracting entry test/unit/compress/expected/issue54.1.js
+silly extracting entry test/unit/compress/expected/issue28.js
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/dateformat/package.json
+silly extracting entry test/unit/compress/expected/forstatement.js
+silly extracting entry share/junit.xml.ejs
+silly extracting entry share/nodeunit.css
+silly extracting entry test/unit/compress/expected/const.js
+verbose readDependencies: using package.json deps
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/dateformat/package.json
+silly extracting entry test/unit/compress/expected/assignment.js
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/dateformat
+info build /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/dateformat
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/dateformat/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules' ]
+info linkStuff dateformat@1.0.2-1.2.3
+verbose linkBins dateformat@1.0.2-1.2.3
+verbose linkMans dateformat@1.0.2-1.2.3
+verbose rebuildBundles dateformat@1.0.2-1.2.3
+silly extracting entry lib/public/icons/page_white_paint.png
+silly extracting entry lib/public/icons/page_link.png
+silly extracting entry test/unit/compress/expected/issue9.js
+info install dateformat@1.0.2-1.2.3
+silly extracting entry test/unit/compress/expected/concatstring.js
+silly extracting entry lib/public/icons/page_white_medal.png
+silly extracting entry test/unit/compress/expected/strict-equals.js
+silly extracting entry lib/public/icons/page_lightning.png
+info postinstall dateformat@1.0.2-1.2.3
+silly extracting entry test/unit/compress/expected/mangle.js
+silly extracting entry lib/public/icons/page_white_key.png
+silly extracting entry test/unit/compress/expected/issue4.js
+silly extracting entry test/unit/compress/expected/issue13.js
+silly extracting entry test/unit/compress/expected/if.js
+silly extracting entry bin/nodeunit.json
+silly extracting entry bin/nodeunit
+silly extracting entry test/unit/compress/expected/issue53.js
+silly extracting entry test/unit/compress/expected/issue20.js
+silly extracting entry Makefile
+silly extracting entry test/unit/compress/expected/issue29.js
+silly extracting entry examples/nested/nested_reporter_test.unit.js
+silly extracting entry test/unit/compress/expected/issue27.js
+silly extracting entry lib/public/icons/page_white_code_red.png
+silly extracting entry lib/public/icons/page_white_copy.png
+silly extracting entry test/unit/compress/expected/issue30.js
+silly extracting entry test/unit/compress/expected/array2.js
+silly extracting entry lib/public/icons/page_white_database.png
+silly extracting entry test/unit/compress/expected/issue34.js
+silly extracting entry lib/public/icons/page_white_visualstudio.png
+silly extracting entry test/unit/compress/expected/issue16.js
+silly extracting entry test/unit/compress/test/var.js
+silly extracting entry lib/public/icons/page_paintbrush.png
+silly extracting entry test/unit/compress/test/issue21.js
+silly extracting entry lib/public/icons/page_white_text_width.png
+silly extracting entry test/unit/compress/test/issue25.js
+silly extracting entry lib/public/icons/page_red.png
+silly extracting entry test/unit/compress/test/issue17.js
+silly extracting entry examples/browser/suite2.js
+silly extracting entry examples/browser/nodeunit.js
+silly extracting entry lib/public/icons/page_save.png
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/colors/package.json
+verbose loadDefaults colors@0.6.0-1
+silly extracting entry test/unit/compress/test/issue10.js
+silly extracting entry lib/public/icons/page_white_go.png
+silly extracting entry test/unit/compress/test/empty-blocks.js
+silly extracting entry lib/public/icons/page_word.png
+silly extracting entry test/unit/compress/test/with.js
+silly extracting entry lib/public/icons/page_key.png
+silly extracting entry test/unit/compress/test/issue69.js
+info preinstall colors@0.6.0-1
+silly extracting entry lib/public/icons/page_green.png
+silly extracting entry test/unit/compress/test/issue11.js
+silly extracting entry lib/public/icons/page_white_cplusplus.png
+silly extracting entry test/unit/compress/test/array3.js
+silly extracting entry examples/browser/suite3.js
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/colors/package.json
+silly extracting entry examples/browser/suite1.js
+silly extracting entry lib/public/icons/page_find.png
+silly extracting entry test/unit/compress/test/issue14.js
+verbose readDependencies: using package.json deps
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/colors/package.json
+silly extracting entry examples/browser/test.html
+silly extracting entry lib/public/icons/page_white_powerpoint.png
+silly extracting entry test/unit/compress/test/issue68.js
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/colors
+info build /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/colors
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/colors/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules' ]
+info linkStuff colors@0.6.0-1
+verbose linkBins colors@0.6.0-1
+verbose linkMans colors@0.6.0-1
+verbose rebuildBundles colors@0.6.0-1
+silly extracting entry deps/async.js
+silly extracting entry lib/public/icons/page_white_cd.png
+info install colors@0.6.0-1
+silly extracting entry test/unit/compress/test/ifreturn2.js
+silly extracting entry deps/console.log.js
+silly extracting entry lib/public/icons/page_code.png
+silly extracting entry test/unit/compress/test/issue48.js
+silly extracting entry deps/json2.js
+silly extracting entry lib/public/icons/page_go.png
+info postinstall colors@0.6.0-1
+silly extracting entry test/unit/compress/test/issue50.js
+silly extracting entry deps/ejs/package.json
+silly extracting entry deps/ejs/index.js
+silly extracting entry test/unit/compress/test/array4.js
+silly extracting entry deps/ejs/ejs.min.js
+silly extracting entry test/unit/compress/test/array1.js
+silly extracting entry deps/ejs/benchmark.js
+silly extracting entry test/unit/compress/test/ifreturn.js
+silly extracting entry deps/ejs/ejs.js
+silly extracting entry test/unit/compress/test/issue54.1.js
+silly extracting entry deps/ejs/Makefile
+silly extracting entry test/unit/compress/test/issue28.js
+silly extracting entry deps/ejs/Readme.md
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver/package.json
+verbose loadDefaults semver@1.0.14
+silly extracting entry test/unit/compress/test/forstatement.js
+silly extracting entry deps/ejs/examples/list.js
+silly extracting entry test/unit/compress/test/const.js
+silly extracting entry deps/ejs/examples/client.html
+silly extracting entry lib/public/icons/page_white_stack.png
+silly extracting entry lib/public/icons/page.png
+silly extracting entry test/unit/compress/test/assignment.js
+silly extracting entry deps/ejs/examples/list.ejs
+info preinstall semver@1.0.14
+silly extracting entry test/unit/compress/test/issue9.js
+silly extracting entry lib/public/icons/page_white_coldfusion.png
+silly extracting entry deps/ejs/support/compile.js
+silly extracting entry test/unit/compress/test/concatstring.js
+silly extracting entry deps/ejs/lib/utils.js
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver/package.json
+silly extracting entry test/unit/compress/test/strict-equals.js
+silly extracting entry deps/ejs/lib/filters.js
+verbose readDependencies: using package.json deps
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver/package.json
+silly extracting entry test/unit/compress/test/mangle.js
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/nopt/package.json
+verbose loadDefaults nopt@1.0.10
+silly extracting entry deps/ejs/lib/ejs.js
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver
+info build /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules' ]
+info linkStuff semver@1.0.14
+verbose linkBins semver@1.0.14
+verbose bins linking [ { semver: './bin/semver' },
+verbose bins linking   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/.bin',
+verbose bins linking   false ]
+verbose linkMans semver@1.0.14
+verbose rebuildBundles semver@1.0.14
+silly extracting entry test/unit/compress/test/issue4.js
+silly extracting entry deps/ejs/History.md
+silly extracting entry test/unit/compress/test/issue13.js
+silly extracting entry deps/ejs/test/ejs.test.js
+silly extracting entry test/unit/compress/test/if.js
+silly extracting entry lib/assert.js
+silly extracting entry test/unit/compress/test/issue53.js
+silly extracting entry lib/nodeunit.js
+silly extracting entry test/unit/compress/test/issue20.js
+info preinstall nopt@1.0.10
+silly extracting entry lib/public/icons/page_white_swoosh.png
+silly extracting entry lib/public/icons/page_white.png
+silly extracting entry lib/track.js
+silly extracting entry test/unit/compress/test/issue29.js
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/semver/package.json
+info preuninstall semver@1.0.14
+silly extracting entry lib/utils.js
+silly extracting entry test/unit/compress/test/issue27.js
+silly extracting entry lib/core.js
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/nopt/package.json
+silly extracting entry lib/public/icons/page_white_star.png
+silly extracting entry test/unit/compress/test/issue30.js
+silly extracting entry lib/types.js
+info uninstall semver@1.0.14
+verbose readDependencies: using package.json deps
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/nopt/package.json
+silly extracting entry lib/reporters/html.js
+verbose readDependencies: using package.json deps
+silly extracting entry lib/public/icons/page_white_compressed.png
+silly extracting entry lib/reporters/verbose.js
+verbose unbuild semver@1.0.14 [ false,
+verbose unbuild semver@1.0.14   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules',
+verbose unbuild semver@1.0.14   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules' ]
+verbose binRoot [ '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/.bin',
+verbose binRoot   { semver: './bin/semver' } ]
+silly extracting entry lib/public/icons/page_white_error.png
+verbose cache add [ 'abbrev@1', null ]
+silly cache add: name, spec, args [ undefined, 'abbrev@1', [ 'abbrev@1', null ] ]
+verbose parsed url { pathname: 'abbrev@1', path: 'abbrev@1', href: 'abbrev@1' }
+silly cache add: name, spec, args [ 'abbrev', '1', [ 'abbrev', '1' ] ]
+verbose parsed url { pathname: '1', path: '1', href: '1' }
+verbose addNamed [ 'abbrev', '1' ]
+verbose addNamed [ null, '>=1.0.0- <2.0.0-' ]
+silly name, range, hasData [ 'abbrev', '>=1.0.0- <2.0.0-', false ]
+silly extracting entry lib/reporters/skip_passed.js
+silly extracting entry lib/public/icons/page_paste.png
+info postuninstall semver@1.0.14
+silly extracting entry lib/public/icons/page_white_edit.png
+silly extracting entry lib/reporters/minimal.js
+silly extracting entry lib/public/icons/page_white_wrench.png
+silly extracting entry lib/reporters/index.js
+silly extracting entry lib/public/icons/page_attach.png
+silly extracting entry lib/public/icons/page_white_width.png
+verbose raw, before any munging abbrev
+verbose url resolving [ 'https://registry.npmjs.org/', './abbrev' ]
+verbose url resolved https://registry.npmjs.org/abbrev
+verbose etag "EHO05UUW5HRM5XHT0C1AXH157"
+http GET https://registry.npmjs.org/abbrev
+silly extracting entry lib/reporters/machineout.js
+silly extracting entry test/unit/compress/test/array2.js
+silly extracting entry test/unit/compress/test/issue34.js
+silly extracting entry lib/public/icons/page_white_put.png
+silly extracting entry lib/reporters/eclipse.js
+silly extracting entry lib/reporters/junit.js
+silly extracting entry test/unit/compress/test/issue16.js
+silly extracting entry lib/reporters/tap.js
+silly extracting entry lib/reporters/default.js
+silly extracting entry lib/reporters/browser.js
+silly extracting entry lib/reporters/nested.js
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/glob-whatev/package.json
+verbose loadDefaults glob-whatev@0.1.6
+silly extracting entry man1/nodeunit.1
+silly extracting entry lib/public/icons/page_white_paste.png
+silly extracting entry lib/public/icons/page_white_cup.png
+silly extracting entry doc/nodeunit.md
+silly extracting entry nodelint.cfg
+info preinstall glob-whatev@0.1.6
+silly extracting entry test/test-testcase-legacy.js
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/glob-whatev/package.json
+verbose about to build /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt
+info unbuild /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt
+verbose from cache /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/package.json
+info preuninstall grunt@0.3.9
+verbose readDependencies: using package.json deps
+silly extracting entry test/test-runmodule.js
+silly extracting entry test/test-base.js
+info uninstall grunt@0.3.9
+silly extracting entry test/test-runfiles.js
+silly extracting entry test/test-sandbox.js
+verbose unbuild grunt@0.3.9 [ true,
+verbose unbuild grunt@0.3.9   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules',
+verbose unbuild grunt@0.3.9   '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules' ]
+verbose binRoot [ '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/.bin',
+verbose binRoot   { grunt: 'bin/grunt' } ]
+silly extracting entry test/test-runtest.js
+silly extracting entry test/test-httputil.js
+info postuninstall grunt@0.3.9
+silly extracting entry test/test-testcase.js
+verbose caching /media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/glob-whatev/package.json
+silly extracting entry test/test-failing-callbacks.js
+verbose readDependencies: using package.json deps
+silly extracting entry lib/public/icons/page_white_tux.png
+silly extracting entry lib/public/icons/page_white_gear.png
+silly extracting entry test/fixtures/raw_jscode3.js
+verbose cache add [ 'minimatch@~0.2.4', null ]
+silly cache add: name, spec, args [ undefined, 'minimatch@~0.2.4', [ 'minimatch@~0.2.4', null ] ]
+verbose parsed url { pathname: 'minimatch@~0.2.4',
+verbose parsed url   path: 'minimatch@~0.2.4',
+verbose parsed url   href: 'minimatch@~0.2.4' }
+silly cache add: name, spec, args [ 'minimatch', '~0.2.4', [ 'minimatch', '~0.2.4' ] ]
+verbose parsed url { pathname: '~0.2.4', path: '~0.2.4', href: '~0.2.4' }
+verbose addNamed [ 'minimatch', '~0.2.4' ]
+verbose addNamed [ null, '>=0.2.4- <0.3.0-' ]
+silly name, range, hasData [ 'minimatch', '>=0.2.4- <0.3.0-', false ]
+silly extracting entry test/fixtures/raw_jscode1.js
+silly extracting entry lib/public/icons/page_white_flash.png
+silly extracting entry test/fixtures/raw_jscode2.js
+silly extracting entry lib/public/icons/page_white_delete.png
+silly extracting entry test/fixtures/mock_module1.js
+silly extracting entry lib/public/icons/page_white_word.png
+silly extracting entry test/fixtures/mock_module2.js
+silly extracting entry lib/public/icons/page_white_find.png
+silly extracting entry test/fixtures/coffee/mock_coffee_module.coffee
+silly extracting entry test/fixtures/dir/mock_module3.js
+silly extracting entry test/fixtures/dir/mock_module4.js
+verbose raw, before any munging minimatch
+verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+verbose url resolved https://registry.npmjs.org/minimatch
+verbose etag "37CMVWI411AD6IEBSA1LXKLSL"
+http GET https://registry.npmjs.org/minimatch
+silly extracting entry test/test.html
+silly extracting entry lib/public/icons/page_add.png
+silly extracting entry lib/public/icons/page_white_lightning.png
+silly extracting entry lib/public/icons/page_white_actionscript.png
+ERR! error rolling back grunt@0.3.9 Error: UNKNOWN, unlink '/media/sf_SuperSonicAds/sandbox/grunt-simple-watch/node_modules/grunt/node_modules/async/lib/async.js'
+ERR! Error: EROFS, symlink '../semver/bin/semver'
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 3.0.0-20-generic
+ERR! command "node" "/usr/bin/npm" "instal" "."
+ERR! cwd /media/sf_SuperSonicAds/sandbox/grunt-simple-watch
+ERR! node -v v0.6.19
+ERR! npm -v 1.1.24
+ERR! path ../semver/bin/semver
+ERR! code EROFS
+ERR! message EROFS, symlink '../semver/bin/semver'
+ERR! errno {}
+verbose exit [ 1, true ]
