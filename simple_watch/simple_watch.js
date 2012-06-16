@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 			targets.push({files: watch.files, tasks: watch.tasks});
 		}
 
-		grunt.log.write('Waiting for file updates on shared folder...');
+		grunt.log.write('Simple Watch, Waiting...');
 
 		// This task is asynchronous.
 		var taskDone = this.async();
@@ -123,8 +123,6 @@ module.exports = function(grunt) {
 		// Unwatch a file.
 		function unWatchFile(filepath) {
 			if (watchedFiles[filepath]) {
-				// Close watcher.
-				// watchedFiles[filepath].close();
 				// Remove from watched files.
 				delete watchedFiles[filepath];
 			}
