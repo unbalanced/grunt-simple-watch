@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 	// have changed incorrectly.
 	var mtimes = {};
 
-	grunt.registerTask('simpler_watch', 'Run predefined tasks whenever watched files change.', function(target) {
+	grunt.registerTask('simple-watch', 'Run predefined tasks whenever watched files change.', function(target) {
 		this.requiresConfig('watch');
 		// Build an array of files/tasks objects.
 		var watch = grunt.config('watch');

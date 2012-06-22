@@ -29,7 +29,7 @@ Install this grunt plugin next to your project's [grunt.js gruntfile][getting_st
 Then add this line to your project's `grunt.js` gruntfile:
 
 ```javascript
-grunt.loadNpmTasks('grunt-');
+grunt.loadNpmTasks('grunt-simple-watch');
 ```
 
 [grunt]: https://github.com/cowboy/grunt
@@ -37,7 +37,7 @@ grunt.loadNpmTasks('grunt-');
 
 (or simple place the task file simple_watch.js in your grunt/tasks directory..)
 
-use the command: <b>grunt simple_watch<b> (instead of: grunt watch)
+use the command: <b>grunt simple-watch<b> (instead of: grunt watch)
 
 <b>NO NEED TO CHANGE grunt.js configurations</b> (your gruntfile)!
 
