@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/unbalanced/grunt-simple-watch.png)](http://travis-ci.org/unbalanced/grunt-simple-watch)
 grunt-simple-watch
 ==================
 
