@@ -17,7 +17,7 @@
  */
 
 module.exports = function(grunt) {
-
+	"use strict";
 	// Nodejs libs.
 	var fs = require('fs');
 	var path = require('path');
