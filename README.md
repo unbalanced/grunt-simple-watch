@@ -43,7 +43,10 @@ use the command: <b>grunt simple-watch<b> (instead of: grunt watch)
 
 as it keeps on using the "watch" config.
 
+--
+Developed at SupersonicAds R&D labs.
+--
 
 <h1>License</h1>
-Copyright (c) 2012 Amir Souchami
+Copyright (c) 2012 Amir Souchami 
 Licensed under the MIT license.
