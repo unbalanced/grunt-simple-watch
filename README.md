@@ -44,6 +44,7 @@ use the command: <b>grunt simple-watch<b> (instead of: grunt watch)
 as it keeps on using the "watch" config.
 
 --
+
 Developed at SupersonicAds R&D labs.
 
 --
