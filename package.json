@@ -2,7 +2,7 @@
   "name": "grunt-simple-watch",
   "title": "simple watch will watch your files without using fs.watch or fs.watchFile",
   "description": "no need to change your gruntfile configurations",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/unbalanced/grunt-simple-watch",
   "author": {
     "name": "Amir Souchami",
