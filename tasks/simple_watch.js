@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 			targets.push({files: watch.files, tasks: watch.tasks});
 		}
 
-		grunt.log.write('Simple Watch, Waiting...');
+		grunt.log.writeln('Simple Watch, Waiting...');
 
 		// This task is asynchronous.
 		var taskDone = this.async();
@@ -112,6 +112,10 @@ module.exports = function(grunt) {
 			// If file was deleted and then re-added, consider it changed.
 			if (changedFiles[filepath] === 'deleted' && status === 'added') {
 				status = 'changed';
+			}
+			// Emit watch events if anyone is listening
+			if (grunt.event.listeners('watch').length > 0) {
+				grunt.event.emit('watch', status, filepath);
 			}
 			// Keep track of changed status for later.
 			changedFiles[filepath] = status;
