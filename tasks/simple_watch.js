@@ -127,7 +127,14 @@ module.exports = function(grunt) {
 		function watchFile(filepath) {
 			if (!watchedFiles[filepath]) {
 				// add a new file to watched files
-				watchedFiles[filepath] = fs.statSync(filepath);
+				var statStructure = null;
+				try {
+					statStructure = fs.statSync(filepath);
+				} catch (e) { // StatSync can throw an error if the file has dissapeared in between
+					return;
+				}
+
+				watchedFiles[filepath] = statStructure;
 				mtimes[filepath] = +watchedFiles[filepath].mtime;
 			}
 		}
