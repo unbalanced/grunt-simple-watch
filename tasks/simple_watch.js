@@ -38,10 +38,13 @@ module.exports = function(grunt) {
 			return typeof watch[key] !== 'string' && !Array.isArray(watch[key]);
 		});
 		targets = targets.map(function(target) {
+			var name = target;
 			// Fail if any required config properties have been omitted.
 			target = ['watch', target];
 			this.requiresConfig(target.concat('files'), target.concat('tasks'));
-			return grunt.config(target);
+			var targetData = grunt.config(target);
+			targetData['name'] = name;
+			return targetData;
 		}, this);
 
 		// Allow "basic" non-target format.
@@ -113,9 +116,19 @@ module.exports = function(grunt) {
 			if (changedFiles[filepath] === 'deleted' && status === 'added') {
 				status = 'changed';
 			}
+			// Keep track of changed status for later.
+			changedFiles[filepath] = status;
 			// Emit watch events if anyone is listening
 			if (grunt.event.listeners('watch').length > 0) {
-				grunt.event.emit('watch', status, filepath);
+				var matchingTargets = [];
+				targets.forEach(function(target) {
+					if (grunt.file.match(target.files, filepath).length > 0) {
+						matchingTargets.push(target.name);
+					}
+				});
+				matchingTargets.forEach(function(matchingTarget) {
+					grunt.event.emit('watch', status, filepath, matchingTarget);
+				});
 			}
 			// Keep track of changed status for later.
 			changedFiles[filepath] = status;
@@ -174,14 +187,16 @@ module.exports = function(grunt) {
 			});
 
 			currFiles.forEach(function(filepath){
-				// Get last modified time of file.
-				var mtime = +fs.statSync(filepath).mtime;
-				// If same as stored mtime, the file hasn't changed.
-				if (mtime === mtimes[filepath]) { return; }
-				// Otherwise it has, store mtime for later use.
-				mtimes[filepath] = mtime;
-				// the file has been changed
-				fileChanged('changed', filepath);
+				if (grunt.file.exists(filepath)) {
+					// Get last modified time of file.
+					var mtime = +fs.statSync(filepath).mtime;
+					// If same as stored mtime, the file hasn't changed.
+					if (mtime === mtimes[filepath]) { return; }
+					// Otherwise it has, store mtime for later use.
+					mtimes[filepath] = mtime;
+					// the file has been changed
+					fileChanged('changed', filepath);
+				}
 			});
 		}, 200);
 	});
