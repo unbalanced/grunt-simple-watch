@@ -99,8 +99,9 @@ module.exports = function(grunt) {
 			targets.forEach(function(target) {
 				var files = grunt.file.expand(target.files);
 				var intersection = grunt.util._.intersection(fileArray, files);
+        var difference = grunt.util._.difference(fileArray, files);
 				// Enqueue specified tasks if a matching file was found.
-				if (intersection.length > 0 && target.tasks) {
+				if ( (intersection.length > 0 || difference.length > 0) && target.tasks) {
 					grunt.task.run(target.tasks).mark();
 				}
 			});
